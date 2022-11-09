@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tom Cat</title>
+	<style type="text/css">
+		h1{
+			color: deeppink;
+		}
+		#jerryList{
+			color: green;
+		}
+		#div1{
+			background-color: lightpink;
+			width: 500; height: 200;
+
+		}
+		#div2{
+			background-color: lightyellow;
+		}
+		#div3{
+			background-color: skyblue;
+		}
+		#div4{
+			background-color: lightgreen;
+		}
+
+		form{ padding:15px ;
+			background-color: white;
+			font-style: italic;
+			border-style: solid;
+			font-weight: 900px;
+		}
+		
+		input[type=button]{
+			color: black;
+			background-color: rgb(0, 100, 200);
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<!-- Content of the page goes in the  body section -->
+	<div id = "div1">
+		<h1> Hi, I'm Tom</h1>
+		<h3>Welcome</h3>
+		<p>I'm looking for <a href="https://en.wikipedia.org/wiki/Jerry_Mouse">Jerry</a>. He was here a minute ago</p>
+		<h3>Lorem Dummy Here</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</div>
+
+	<!-- Can always leave a comment with this tag -->
+
+	<!-- images can be added with img tag -->
+
+	<img src="http://cdn.akc.org/content/article-body-image/samoyed_puppy_dog_pictures.jpg" alt="Weak image">
+
+
+
+	<!-- Two types of lists - Ol(ordered list) and UL(unordered list) -->
+
+	<div id= "div2">
+
+
+			<p>Here's a list of my fav morning drinks</p>
+
+			<ul>
+				<li> Coffee</li>
+				<li> Tea</li>
+				<li>Milk</li>
+			</ul>
+
+			<p>Ordered list</p>
+
+			<ol>
+				<li>First Item</li>
+				<li>Second Item</li>
+				<li>Third Item</li>
+				<li> Fourth Item</li>
+			</ol>
+
+				<!-- to add a link, an Anchor tag is used -->
+
+			<a href = "https://www.google.com"> Click here </a>
+
+			<!-- For special signs
+				&lt;  is used for < 
+				&gt for >
+				&amp used ofr &
+				&nbsp used for a space
+				&copy used for a copyright c
+			-->
+
+			<p>Nobody is gonna know &copy</p>
+
+	
+
+
+			<!-- HTML tables -->
+			<!-- To create a table, <tr> adds a  new row to the table, <th> adds a heading to that row, <td> adds data to the row -->
+			<table width = "50%" border= solid> 
+				<tr>
+					<th> First Name</th>
+					<th>Last Name</th>
+					<th>Gender</th>
+					<th>Age</th>
+				</tr>
+				<tr>
+					<td>Bob</td>
+					<td>Smith</td>
+					<td>Male</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>Bon</td>
+					<td>&copy</td>
+					<td>Male</td>
+					<td>21</td>
+				</tr>
+				<tr>
+					<td>Chidnma</td>
+					<td>Nwoko</td>
+					<td>Female</td>
+					<td>20</td>
+				</tr>
+
+			</table>
+
+	</div>
+
+
+	<!-- MULTIMEDIA - Sound, music, videos, movies, and animations. /control adds vidoe control like play/pause, volume and stuff. Autoplay starts the video automatically
+	Width and Height control the size of the video on your browse. It is recommended to always included widht and height atrributes. The page will change(or flicker) while the video loads if the height and widht are not set. MP4 is supported by most of the  popular browsers-->
+
+	<!-- <video> specifies a video or movie to be added to the page. <source defines multiple media rossources for media elements suchas video and audio -->
+		
+	<div id="div3">
+
+		<video width="300" height="240" controls>
+			<source src="test2.mov" type="video/mp4">
+			<source src="Test.mp4" type="video/mp4">
+			
+		</video>
+
+	</div>
+
+	<!-- You can also embedd youtube videos using iframe tag -->
+
+	<div id="div4">
+
+	<iframe width="300" height="200" 
+	src="https://www.youtube.com/embed/YQRHrco73g4" title="Alan Walker, K-391, Tungevaag, Mangoo - PLAY (Alan Walker's Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		
+	</iframe>
+
+	</div>
+
+
+	<!-- Link the Nav Bar. The <nav> tag defines a set of navigation links. The <nav> element is intended only for major blocks of navigation links. -->
+
+	<h1>Hi, you can Call me Tom</h1>
+	<h3>Welcome,</h3>
+
+	<nav>
+		<a href="">Stories</a>
+		<a href=""> contact</a>
+	</nav>
+
+	<!-- <div> is like a container of other html elements</div>, used to divide your HTML into different sections( will be more useful when styling the page)
+		Wrap elements in div tag and it will look like a block container on the page with stuff in it-->
+
+
+	<!-- Navigation Bar: when your website has more than a signle web page, a navigation bar would help users get around. Menu/Navigagtion to  a web page can be added in two way: Using lists(Vertical Nav Bar) Or using Nav tag in HTML(Horizontal Nav Bar) -->
+
+
+	<!-- Create a unordered list and menu items, then add lInks to the list items(# is a placeholder for a link) -->
+
+	<!-- Using list -->
+
+	
+	<ul>
+		<li><a href="#News">News</a></li>
+		<li><a href="#About">About</a></li>
+		<li><a href="#Contact">Contact</a></li>
+	</ul>
+
+	<!-- Using nav tag -->
+
+	<nav>
+		<a href="#">Menu 1</a>
+		<a href="#">Menu 2</a>
+		<a href="#">Menu 3</a>
+		<a href="#">Menu 4</a>
+	</nav>
+
+
+
+<!-- Cascading Style Sheet - CSS: CSS styles the HTML, describes how HTML elements should appear on the screen, Adds colors, fonts, and layout to webpages-->
+
+  <!-- 
+  CSS consists of  a selector, property and attribute.
+
+    Selector indicates the name of the TAG you want to change the  appearence of(This will affect all TAGS of that name eg. <h1> ).
+	Property: Indicates the change you are making to tis tag(eg: h1{color, font type, size})
+	Value: Indicates the value you want to give to the property(eg: h1{color: red, font type: sans, size: 16pt})
+	I will add style to the h1 to the title
+
+
+   -->
+
+   <!-- How would you style just one of the two p tags in the following? id attribute is used to style one out of many same elements on the page -->
+
+   <p>I'm looking for <a href="https://en.wikipedia.org.wiki/Jerry_Mouse">Jerry</a>
+   	He was here a minute ago
+   </p>
+
+   <p id="jerryList"> Here are some of Jerry's favorite foods:</p>
+
+   <ol>
+   	<li>Chocolate</li>
+   	<li>Peanut Butter</li>
+   	<li>Cheese</li>
+   </ol>
+
+   <div id="div5">
+
+
+		   <form>
+		   	<h3>Please sign up here</h3>
+		   	First Name: <br>
+		   	<input type="text" name="firstname"><br>
+		   	Last Name: <br>
+		   	<input type="text" name="lastname"><br>
+		   	Class:<br>
+		   	<input type="text" name="class"><br>
+
+
+		   	<input type="radio" name="gender" value="Female">
+		   	   				Female <br>
+		   	<input type="radio" name="gender" value="male">
+		   				Male <br>
+		   	<input type="button" name="submit" value="Submit">
+
+		   </form>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
